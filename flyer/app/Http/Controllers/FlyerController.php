@@ -16,11 +16,21 @@ class FlyerController extends Controller
 
     public function create()
     {
+        // flash()->overlay('Hello', 'This is message');
     	return view('flyer.create');
     }
     public function store(FlyerRequest $request)
     {
+        
     	Flyer::create($request->all());
+
+        flash()->success('Success', 'Your flyer has been created');
+
         return redirect()->back();
+    }
+
+    public function show()
+    {
+        # code...
     }
 }

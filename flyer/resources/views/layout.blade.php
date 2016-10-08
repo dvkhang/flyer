@@ -15,6 +15,9 @@
 </style>
 </head>
 <body>
+  
+  
+
 	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -53,8 +56,6 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <script src="{{asset('/js/libs/sweetalert-dev.js')}}"></script>
-    <script type="text/javascript">
-      swal({   title: "Error!",   text: "Here's my error message!",   type: "success",   confirmButtonText: "Cool" });
-    </script>
+    @include('flash')
 </body>
 </html>
